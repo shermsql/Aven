@@ -1,0 +1,31 @@
+		___
+	 /   |  ____  ____ ___
+	/ /| | / __ \/ __ `__ \
+ / ___ |/ /_/ / / / / / /
+/_/  |_|\____/_/ /_/ /_/
+
+				Aven CLI Encryption 🔐
+
+Welcome To Aven — A Clean, Modular CLI Tool For Caesar And XOR Encryption.
+
+Usage:
+	aven -m <Mode> -a <Algorithm> -t <Text>
+	aven --help
+
+Parameters:
+	-m     Mode Of Operation     Encrypt / Decrypt
+	-a     Algorithm To Use      Caesar / XOR
+	-t     Text To Process       "Hello World"
+	--help Show Help Message     Displays This Output
+
+Examples:
+	aven -m Encrypt -a Caesar -t "Hello World"
+	aven -m Decrypt -a XOR -t "<Encrypted Output>"
+	aven --help
+
+Tip:
+	Caesar Uses A Default Shift Of "3"
+	XOR Uses A Default Key Of "7"
+
+License:
+	MIT — Free To Use, Modify, And Share.
