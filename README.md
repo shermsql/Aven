@@ -70,12 +70,12 @@ Aven -m <Mode> -a <Algorithm> -t <Text>
 
 #### 📑 Parameters
 
-| Flag     | Type    | Description       | Example               |
-|----------|---------|-------------------|-----------------------|
-| `-m`     | String  | Mode Of Operation | `Encrypt` / `Decrypt` |
-| `-a`     | String  | Algorithm To Use  | `Caesar` / `XOR`      |
-| `-t`     | String  | Text To Process   | `"Hello World"`       |
-| `-h` | Bool    | Show Help Message | `-h`              |
+| Flag | Type   | Description       | Example               |
+|------|--------|-------------------|-----------------------|
+| `-m` | String | Mode Of Operation | `Encrypt` / `Decrypt` |
+| `-a` | String | Algorithm To Use  | `Caesar` / `XOR`      |
+| `-t` | String | Text To Process   | `"Hello World"`       |
+| `-h` | Bool   | Show Help Message | `-h`                  |
 
 #### 📖 Examples
 
