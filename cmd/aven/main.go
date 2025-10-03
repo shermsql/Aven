@@ -21,6 +21,6 @@ func main() {
 	case "Decrypt":
 		crypto.Decrypt(Config)
 	default:
-		fmt.Println("[Aven] Invalid Mode:", Config.Mode)
+		fmt.Println("Aven, Invalid Mode:", Config.Mode)
 	}
 }

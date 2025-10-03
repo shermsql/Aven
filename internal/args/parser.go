@@ -13,7 +13,7 @@ func Parse() Config {
 	mode := flag.String("m", "", "Mode: Encrypt Or Decrypt.")
 	algorithm := flag.String("a", "", "Algorithm: Caesar Or XOR.")
 	text := flag.String("t", "", "Text To Process.")
-	help := flag.Bool("help", false, "Show Help Message.")
+	help := flag.Bool("h", false, "Show Help Message.")
 
 	flag.Parse()
 

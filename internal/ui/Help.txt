@@ -1,31 +1,30 @@
-		___
-	 /   |  ____  ____ ___
-	/ /| | / __ \/ __ `__ \
- / ___ |/ /_/ / / / / / /
-/_/  |_|\____/_/ /_/ /_/
+    ___
+   /   |_   _____  ____
+  / /| | | / / _ \/ __ \
+ / ___ | |/ /  __/ / / /
+/_/  |_|___/\___/_/ /_/
 
-				Aven CLI Encryption 🔐
-
-Welcome To Aven — A Clean, Modular CLI Tool For Caesar And XOR Encryption.
+Aven Provides Caesar And XOR Encryption Through A Clean, Modular CLI — Built For Speed And Extensibility.
 
 Usage:
-	aven -m <Mode> -a <Algorithm> -t <Text>
-	aven --help
+	Aven -m <Mode> -a <Algorithm> -t <Text>
 
 Parameters:
-	-m     Mode Of Operation     Encrypt / Decrypt
-	-a     Algorithm To Use      Caesar / XOR
-	-t     Text To Process       "Hello World"
-	--help Show Help Message     Displays This Output
+	-m Mode Of Operation    Encrypt / Decrypt
+	-a Algorithm To Use     Caesar / XOR
+	-t Text To Process      "Hello World"
+	-h Show Help Message    Displays This Output
 
 Examples:
-	aven -m Encrypt -a Caesar -t "Hello World"
-	aven -m Decrypt -a XOR -t "<Encrypted Output>"
-	aven --help
+	Aven -m Encrypt -a Caesar -t "Hello World!"
+	Aven -m Decrypt -a Caesar -t "Khoor Zruog!"
+	Aven -m Encrypt -a XOR -t "Secret 123"
+	Aven -m Decrypt -a XOR -t "<Encrypted Output>"
+	Aven -h
 
 Tip:
 	Caesar Uses A Default Shift Of "3"
 	XOR Uses A Default Key Of "7"
 
 License:
-	MIT — Free To Use, Modify, And Share.
+	Licensed Under The MIT License — Feel Free To Use, Modify, And Share With Proper Attribution. Encryption Belongs To Everyone.

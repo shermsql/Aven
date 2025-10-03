@@ -6,7 +6,7 @@ import (
 )
 
 func XOREncrypt(text string, key byte) {
-	ui.Header("🔐 [Aven] XOR Encryption")
+	ui.Header("Aven, XOR Encryption")
 	ui.Field("Input", text)
 	ui.Field("Key", fmt.Sprintf("%d", key))
 
@@ -18,7 +18,7 @@ func XOREncrypt(text string, key byte) {
 }
 
 func XORDecrypt(text string, key byte) {
-	ui.Header("🔓 [Aven] XOR Decryption")
+	ui.Header("Aven, XOR Decryption")
 	ui.Field("Input", text)
 	ui.Field("Key", fmt.Sprintf("%d", key))
 

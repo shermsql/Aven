@@ -12,10 +12,22 @@ Aven Provides Caesar And XOR Encryption Through A Clean, Modular CLI — Built F
 
 #### 📦 Installation
 
+##### 📥 Clone The Repository
+
 ```bash
-git clone https://github.com/shermsql/aven.git
-cd aven
-go build ./cmd/aven
+git clone https://github.com/shermsql/Aven.git
+```
+
+##### 📁 Go To Project Directory
+
+```bash
+cd Aven
+```
+
+##### ⚙️ Compile The Project
+
+```bash
+go build .\cmd\aven
 ```
 
 #### 🧱 Platform Builds
@@ -25,25 +37,25 @@ Aven Can Be Built For Multiple Platforms Using Go's Cross-Compilation.
 ##### 🪟 Windows (64-Bit)
 
 ```bash
-GOOS=windows GOARCH=amd64 go build -o aven.exe ./cmd/aven
+GOOS=windows GOARCH=amd64 go build -o Aven.exe .\cmd\aven
 ```
 
 ##### 🍎 macOS (Intel & Apple Silicon)
 
 ```bash
-GOOS=darwin GOARCH=amd64 go build -o aven ./cmd/aven
+GOOS=darwin GOARCH=amd64 go build -o Aven .\cmd\aven
 ```
 
 ##### 🐧 Linux (64-Bit)
 
 ```bash
-GOOS=linux GOARCH=amd64 go build -o aven ./cmd/aven
+GOOS=linux GOARCH=amd64 go build -o Aven .\cmd\aven
 ```
 
 ##### 🐧 Linux (ARM)
 
 ```bash
-GOOS=linux GOARCH=arm64 go build -o aven ./cmd/aven
+GOOS=linux GOARCH=arm64 go build -o Aven .\cmd\aven
 ```
 
 ##### ℹ️ All Builds Produce A Standalone Binary With No External Dependencies.
@@ -53,7 +65,7 @@ GOOS=linux GOARCH=arm64 go build -o aven ./cmd/aven
 #### 🛠️ Usage
 
 ```bash
-aven -m <Mode> -a <Algorithm> -t <Text>
+Aven -m <Mode> -a <Algorithm> -t <Text>
 ```
 
 #### 📑 Parameters
@@ -63,7 +75,7 @@ aven -m <Mode> -a <Algorithm> -t <Text>
 | `-m`     | String  | Mode Of Operation | `Encrypt` / `Decrypt` |
 | `-a`     | String  | Algorithm To Use  | `Caesar` / `XOR`      |
 | `-t`     | String  | Text To Process   | `"Hello World"`       |
-| `--help` | Bool    | Show Help Message | `--help`              |
+| `-h` | Bool    | Show Help Message | `-h`              |
 
 #### 📖 Examples
 
@@ -72,7 +84,7 @@ aven -m <Mode> -a <Algorithm> -t <Text>
 Encrypts The Input Text Using Caesar Cipher With A Default Shift Of `3`.
 
 ```bash
-go run ./cmd/aven -m Encrypt -a Caesar -t "Hello World!"
+go run .\cmd\aven -m Encrypt -a Caesar -t "Hello World!"
 ```
 
 ##### 🔓 Caesar Decryption
@@ -80,7 +92,7 @@ go run ./cmd/aven -m Encrypt -a Caesar -t "Hello World!"
 Decrypts A Caesar-Encrypted String Back To Its Original Form.
 
 ```bash
-go run ./cmd/aven -m Decrypt -a Caesar -t "Khoor Zruog!"
+go run .\cmd\aven -m Decrypt -a Caesar -t "Khoor Zruog!"
 ```
 
 ##### 🔐 XOR Encryption
@@ -88,7 +100,7 @@ go run ./cmd/aven -m Decrypt -a Caesar -t "Khoor Zruog!"
 Encrypts The Input Using XOR Cipher With A Default Key Of `7`.
 
 ```bash
-go run ./cmd/aven -m Encrypt -a XOR -t "Secret 123"
+go run .\cmd\aven -m Encrypt -a XOR -t "Secret 123"
 ```
 
 ##### 🔓 XOR Decryption
@@ -96,15 +108,15 @@ go run ./cmd/aven -m Encrypt -a XOR -t "Secret 123"
 Decrypts An XOR-Encrypted String Using The Same Key.
 
 ```bash
-go run ./cmd/aven -m Decrypt -a XOR -t "<Encrypted Output>"
+go run .\cmd\aven -m Decrypt -a XOR -t "<Encrypted Output>"
 ```
 
 ##### 🆘 Help Output
 
-Displays Aven's ASCII Logo And Help Message When Parameters Are Missing Or `--help` Is Used.
+Displays Aven's ASCII Logo And Help Message When Parameters Are Missing Or `-h` Is Used.
 
 ```bash
-go run ./cmd/aven --help
+go run .\cmd\aven -h
 ```
 
 #### 🗂️ Project Structure
@@ -116,9 +128,9 @@ aven/
 ├── cmd/aven/        # Entry Point
 ├── internal/args/   # CLI Argument Parser
 ├── internal/crypto/ # Encryption Algorithms
-├── internal/ui/     # Terminal Banner And Help Output
-│   ├── help.txt     # ASCII Logo + Help Message
-│   ├── print.go     # Stylized Terminal Output
+├── internal/ui/     # CLI Output
+│   ├── Help.txt     # Help Text
+│   ├── print.go     # Stylized CLI Output
 │   └── ui.go        # Help Printer Logic
 ├── go.mod           # Go Module Definition
 ├── README.md        # Project Documentation

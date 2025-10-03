@@ -7,7 +7,7 @@ import (
 )
 
 func CaesarEncrypt(text string, shift int) {
-	ui.Header("🔐 [Aven] Caesar Encryption")
+	ui.Header("Aven, Caesar Encryption")
 	ui.Field("Input", text)
 	ui.Field("Shift", fmt.Sprintf("%d", shift))
 
@@ -28,7 +28,7 @@ func CaesarEncrypt(text string, shift int) {
 }
 
 func CaesarDecrypt(text string, shift int) {
-	ui.Header("🔓 [Aven] Caesar Decryption")
+	ui.Header("Aven, Caesar Decryption")
 	ui.Field("Input", text)
 	ui.Field("Shift", fmt.Sprintf("%d", shift))
 
@@ -39,7 +39,7 @@ func CaesarDecrypt(text string, shift int) {
 			if unicode.IsLower(c) {
 				base = 'a'
 			}
-			decrypted := (int(c)-int(base)-shift+26)%26 + int(base)
+			decrypted := (int(c) - int(base) - shift + 26) %26 + int(base)
 			result += string(rune(decrypted))
 		} else {
 			result += string(c)

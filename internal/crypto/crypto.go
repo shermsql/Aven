@@ -12,7 +12,7 @@ func Encrypt(Config args.Config) {
 	case "XOR":
 		XOREncrypt(Config.Text, 'K')
 	default:
-		fmt.Println("[Aven] Unsupported Algorithm: ", Config.Algorithm)
+		fmt.Println("Aven, Unsupported Algorithm: ", Config.Algorithm)
 	}
 }
 
@@ -23,6 +23,6 @@ func Decrypt(Config args.Config) {
 	case "XOR":
 		XORDecrypt(Config.Text, 'K')
 	default:
-		fmt.Println("[Aven] Unsupported Algorithm: ", Config.Algorithm)
+		fmt.Println("Aven, Unsupported Algorithm: ", Config.Algorithm)
 	}
 }
